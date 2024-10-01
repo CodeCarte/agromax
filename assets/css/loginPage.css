@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Josefin Sans", system-ui;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #144D71;
+    padding: 40px;
+    width: 934px;
+    height: 934px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    img {
+        width: 96px;
+        height: 96px;
+    }
+}
+
+h2 {
+    color: white;
+    font-size: 65.98px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 182px;
+    font-size: 30.78px;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+p a {
+    color: #B2DDF9;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    width: 660px;
+    margin-bottom: 36px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    outline: none;
+    height: 96px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Josefin Sans", system-ui;
+    font-size: 30.78px;
+    text-align: justify;
+}
+
+button {
+    background-color: #D8ECFE;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    width: 660px;
+    height: 96px;
+    color: black;
+    font-size: 35.06px;
+    cursor: pointer;
+    font-weight: 550;
+    margin-top: 124px;
+}
+
+button:hover {
+    background-color: #C0E1FA;
+}
