@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --font-principal: "Josefin Sans", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url('caminho-da-imagem-de-fundo.jpg&apos no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif; */
+}
+
+.cadastro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.box-cadastro {
+    background-color: #124975;
+    padding: 50px 50px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    color: #DBF2FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #DBF2FF;
+    font-family:  var(--font-principal);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#input-nomes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    top: 40px;
+}
+
+#input-nomes input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: calc(50% - 5px);
+    font-family:  var(--font-principal);
+    background-color: rgba(97, 121, 153, 0.53);
+    text-align: center;
+}
+
+#input-dados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    top: 40px;
+}
+
+#input-dados input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    font-family:  var(--font-principal);
+    background-color: rgba(97, 121, 153, 0.53);
+}
+
+#checkbox-input {
+    display: flex;
+    position: relative;
+    right: 48px;
+    top: 15px;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+    color: #DBF2FF;
+    font-family:  var(--font-principal);
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 270%;
+    position: relative;
+    top: 40px;
+    right: 125px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #DBF2FF;
+    color: #124975;
+    transition: background-color 0.3s ease;
+    font-family:  var(--font-principal);
+}
+
+button:hover {
+    background-color: #BFDFF8;
+}
+
+.img-fechar {
+    position: relative;
+    
+}
+
+img{
+    position: absolute;
+    bottom: 65px; 
+    left: 397px;
+    height: 50px;
+    cursor: pointer;   
+}
+
+.link-style{
+    text-decoration: none;
+    color: #BFDFF8;
+    text-decoration: underline;
+}
