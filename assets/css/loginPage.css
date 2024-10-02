@@ -6,7 +6,7 @@
 
 html, body {
     height: 100%;
-    font-family: "Josefin Sans", system-ui;
+    font-family: "Josefin Sans";
 }
 
 body {
@@ -62,14 +62,15 @@ h2 {
     color: white;
     font-size: 52px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 600;
+    color: rgba(219, 242, 255, 1);
 }
 
 p {
-    margin-bottom: 182px;
     font-size: 30px;
     color: #FFFFFF;
-    font-weight: 100;
+    font-weight: 300;
+    font-style: normal;
 }
 
 #naotemconta-text {
@@ -104,7 +105,7 @@ input {
 
 input::placeholder {
     color: rgba(255, 255, 255, 0.6);
-    font-family: "Josefin Sans", system-ui;
+    font-family: "Josefin Sans";
     font-size: 25px;
 }
 
@@ -117,8 +118,9 @@ button {
     height: 70px;
     color: black;
     font-size: 35.06px;
+    font-weight: 600;
+    font-family: "Josefin Sans";
     cursor: pointer;
-    font-weight: 550;
     margin-top: 124px;
     display: flex;
     align-items: center;
