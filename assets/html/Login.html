@@ -8,20 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div class="video-container">
     <video autoplay muted loop id="background-video" src="../videos/background-video.mp4"></video>
+</div>
     <div class="login-container">
         <div class="login-box">
             <span class="close-button">
-                <img src="../imgs/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="fechar aba">
+                <img src="../imgs/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="fechar aba" onclick="window.location.href='./Home.html'">
             </span>
             <div class="header-text">
                 <h2>Entre na sua conta</h2>
-            <p id="naotemconta-text">não tem uma conta? <a href="#">Cadastre-se</a></p>
+            <p id="naotemconta-text">não tem uma conta? <a href="../html/Cadastro.html" >Cadastre-se</a></p>
             </div>
             
             <form>
+            <div id="input-email">
                 <input type="email" placeholder="Email">
+            </div>
+            <div id="input-senha">
                 <input type="password" placeholder="Senha">
+            </div>
                 <button type="submit" onclick="window.location.href='./TesteDeConhecimento.html';">Entrar</button>
             </form>
         </div>

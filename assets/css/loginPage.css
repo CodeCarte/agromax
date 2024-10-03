@@ -13,18 +13,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    height: 100vh;
+}
+
+.video-container {
     position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 #background-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
 }
 
 
@@ -33,34 +42,43 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    position: absolute;
 }
 
 .login-box {
-    background-color: #144D71;
-    padding: 100px;
+    background-color: #124975;
+    padding: 50px 50px;
     border-radius: 10px;
+    width: 650px;
+    height: 650px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 800px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.close-button {
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #DBF2FF;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+}
+
+
+img {
     position: absolute;
+    left: 580px;
     top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 24px;
+    height: 55px;
     cursor: pointer;
-    img {
-        width: 96px;
-        height: 96px;
-    }
+
 }
 
 h2 {
     color: white;
-    font-size: 52px;
+    font-size: 40px;
     margin-bottom: 10px;
     font-weight: 600;
     color: rgba(219, 242, 255, 1);
@@ -75,6 +93,13 @@ p {
 
 #naotemconta-text {
     margin-bottom: 200px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    position: relative;
+    bottom: 8px;
+    
 }
 
 p a {
@@ -86,42 +111,70 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-input {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    border-radius: 15px;
-    width: 600px;
-    height: 70px;
-    padding: 40px;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 22px;
-    text-align: left;
-    outline: none;
+
+#input-email {
+    display: flex;
+    justify-content: center;
+    width: 170%;
 }
+
+#input-email input {
+
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: calc(50% - 5px);
+    padding: 25px;
+    border-radius: 15px;
+    font-family: "Josefin Sans";
+    background-color: rgba(97, 121, 153, 0.53);
+    text-align: start;
+}
+
+#input-senha {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    position: relative;
+    top: 20px;
+}
+
+#input-senha input {
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    font-family: "Josefin Sans";
+    background-color: rgba(97, 121, 153, 0.53);
+    text-align: start;
+}  
 
 
 input::placeholder {
     color: rgba(255, 255, 255, 0.6);
     font-family: "Josefin Sans";
-    font-size: 25px;
+    font-size: 16px;
 }
 
 button {
     background-color: #D8ECFE;
     border: none;
     border-radius: 15px;
-    padding: 40px;
-    width: 600px;
-    height: 70px;
+    padding: 25px;
+    width: 467.5px;
+    height: 66px;
     color: black;
-    font-size: 35.06px;
+    font-size: 16px;
     font-weight: 600;
     font-family: "Josefin Sans";
     cursor: pointer;
-    margin-top: 124px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

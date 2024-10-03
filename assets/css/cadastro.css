@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --font-principal: "Josefin Sans", sans-serif;
+    --font-principal: "Josefin Sans";
 }
 
 
@@ -68,6 +68,11 @@ body {
     font-size: 20px;
 }
 
+.titulos p {
+    font-family:  var(--font-principal);
+    font-weight: 300;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -132,14 +137,14 @@ form {
 button {
     background-color: #D8ECFE;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 25px;
     width: 467.5px;
     height: 66px;
     color: black;
     font-size: 16px;
     cursor: pointer;
-    font-weight: 550;
+    font-weight: 600;
     margin-top: 70px;
     display: flex;
     align-items: center;
@@ -159,8 +164,8 @@ button:hover {
 
 img{
     position: absolute;
-    bottom: 75px; 
-    left: 545px;
+    left: 535px;
+    bottom: 63px;
     height: 55px;
     cursor: pointer;   
 }
@@ -169,6 +174,8 @@ img{
     text-decoration: none;
     color: #BFDFF8;
     text-decoration: underline;
+    font-family:  var(--font-principal);
+
 }
 
 input::placeholder {
