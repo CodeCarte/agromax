@@ -23,14 +23,14 @@
             <p id="naotemconta-text">não tem uma conta? <a href="../html/Cadastro.html" >Cadastre-se</a></p>
             </div>
             
-            <form>
+            <form id="login-form">
             <div id="input-email">
-                <input type="email" placeholder="Email">
+                <input type="email" id="usuario" placeholder="Email">
             </div>
             <div id="input-senha">
-                <input type="password" placeholder="Senha">
+                <input type="password" id="senha" placeholder="Senha">
             </div>
-                <button type="submit" onclick="window.location.href='./TesteDeConhecimento.html';" id="login-btn">Entrar</button>
+                <button type="submit" id="login-btn" onclick="logar()">Entrar</button>
             </form>
         </div>
     </div>
