@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/token.css" />
+    <link rel="stylesheet" href="../css/token.css"/>
+
     <title>Página de Token</title>
   </head>
   <body>
@@ -42,8 +43,32 @@
     <main>
       <div class="conteudo">
         <h1>Insira o token de identificação do aparelho:</h1>
-        <input type="text" placeholder="Insira o token..." required/>
+        <input type="text" id="token-input" placeholder="Insira o token..." required/> <!--Formato: ABC-1234-XY-->
       </div>
     </main>
+
+    <script>
+
+      document.getElementById('token-input').addEventListener("keypress", function(event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          const token = event.target.value;
+          const tokenFormat = /^[A-Z]{3}-\d{4}-[A-Z]{2}$/;
+
+          if (tokenFormat.test(token)) {
+            window.location.href="./Dados.html";
+          } else {
+            alert("Token inválido! Por favor, insira um token no formato correto.");
+          }
+        }
+      });
+  
+
+
+
+
+
+
+    </script>
   </body>
 </html>
