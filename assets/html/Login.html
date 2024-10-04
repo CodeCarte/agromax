@@ -6,7 +6,6 @@
     <title>Página de Login</title>
     <link rel="stylesheet" href="../css/loginpage.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
-    <script defer src="../js/ValidationForm.js"></script>
 </head>
 <body>
 
@@ -16,21 +15,21 @@
     <div class="login-container">
         <div class="login-box">
             <span class="close-button">
-                <img src="../imgs/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="fechar aba" onclick="window.location.href='./Home.html'">
+                <img src="../imgs/close.svg" alt="fechar aba" onclick="window.location.href='./Home.html'">
             </span>
             <div class="header-text">
                 <h2>Entre na sua conta</h2>
             <p id="naotemconta-text">não tem uma conta? <a href="../html/Cadastro.html" >Cadastre-se</a></p>
             </div>
             
-            <form id="login-form">
+            <form action="../html/Dashboard.html" id="login-form">
             <div id="input-email">
-                <input type="email" id="usuario" placeholder="Email">
+                <input type="email" id="usuario" placeholder="Email" required>
             </div>
             <div id="input-senha">
-                <input type="password" id="senha" placeholder="Senha">
+                <input type="password" id="senha" placeholder="Senha" required>
             </div>
-                <button type="submit" id="login-btn" onclick="logar()">Entrar</button>
+                <button id="login-btn" type="submit">Entrar</button>
             </form>
         </div>
     </div>
