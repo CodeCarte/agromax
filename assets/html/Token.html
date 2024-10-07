@@ -43,7 +43,7 @@
     <main>
       <div class="conteudo">
         <h1>Insira o token de identificação do aparelho:</h1>
-        <input type="text" id="token-input" placeholder="Insira o token..." required/> <!--Formato: ABC-1234-XY-->
+        <input type="text" id="token-input" placeholder="Formato(ABC-1234-XY)" required/> <!--Formato: ABC-1234-XY-->
       </div>
     </main>
 
@@ -56,7 +56,7 @@
           const tokenFormat = /^[A-Z]{3}-\d{4}-[A-Z]{2}$/;
 
           if (tokenFormat.test(token)) {
-            window.location.href="./Dados.html";
+            window.location.href="./Graficos.html";
           } else {
             alert("Token inválido! Por favor, insira um token no formato correto.");
           }

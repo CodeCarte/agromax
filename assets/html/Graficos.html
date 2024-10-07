@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/graficos.css">
+    <link rel="stylesheet" href="../css/rodagrafico.css">
+    <title>Análise dos Dados Coletados</title>
+</head>
+<body>
+
+    <aside>
+        <img
+          class="logo"
+          src="../imgs/logo.svg"
+          alt="logo da agromax"
+        />
+        <nav>
+          <ul class="lista-links">
+            <li>
+            <a href="../html/Dashboard.html">
+              <button class="link-home"> 
+                Introdução
+                <img
+                  class="img-links"
+                  src="../imgs/home.svg"
+                />
+              </button>
+            </a>
+            </li>
+            <li>
+              <button class="link-dados" >   
+                Dados
+                <img class="img-links" src="../imgs/data.svg" />
+              </button>
+            </li>
+            <li>
+              <button class="link-recomendacoes">Recomendações </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+
+      <main>
+        <div class="conteudo">
+            <h1>Seção de Resumo Geral</h1>
+            <hr>
+        </div>
+
+        <div class="rodagrafico-container">
+            <div class="rodagrafico__body">
+                <div class="roda__fill"></div>
+                <div class="roda__cover">50%</div>
+            </div>
+        </div>
+      </main>
+
+
+
+
+      <script>
+        const rodaElemento = document.querySelector(".rodagrafico-container");
+
+        function mudarValorRoda(rodaElemento, valor){
+
+            if (value < 0 || value > 1) {
+                return;
+            }
+
+            roda.querySelector(".roda__fill").style.transform = `rotate(${valor / 2}turn)`;
+
+        }
+      </script>
+    
+</body>
+</html>
