@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    
+    font-family: "Josefin Sans", sans-serif;
+    color: #DBF2FF;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100vh;
+    width: 250px;
+    text-align: start;
+    background-color: #DBF2FF;
+    font-weight: 500;
+}
+
+
+
+
+.lista-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:  center;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.lista-links a {
+    text-decoration: none;
+}
+
+.link-recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 9px;
+    background-color: #617999;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color: #516585;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+ }
+
+
+ .img-links{
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+}
+
+
+main {
+    background-color: #124975;
+    flex-grow: 1;
+    width: 100%;
+    max-height: 100vh;
+    padding: 20px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+main .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+
+main .card-container {
+    padding: 26px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+    background-color: #617999;
+}
+
+main .card-container img {
+    width: 100px;
+    height: 100px;
+}
+
+
+main .topic-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .topic-container h2 {
+    width: 400px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+main .recomendations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    main .card-container img {
+        width: 60px;
+        height: 60px;
+    }
+    main .card-container {
+        width: 90%;
+        height: 560px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

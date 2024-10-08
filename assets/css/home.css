@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-color: #DBF2FF
+}
+
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #124975;
+    color: var(--font-color);
+}
+
+header .headerContainer {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--font-color);
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+.headerContainer #agroMaxIcon {
+    width: 100px;
+    height: auto;
+    margin-left: 22px;
+}
+
+.headerContainer nav {
+    margin-right: 3%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.headerContainer nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.headerContainer nav #loginIcon {
+    width: 30px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+main hr {
+    width: 100%;
+}
+
+main #hrContainerDivison {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+main .registerContainer {
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 120px;
+    padding-bottom: 80px;
+    gap: 100px;
+}
+
+main .registerContainer img  {
+    width: 28%;
+    height: 40%;
+}
+
+
+
+main .registerContainer .registerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .registerContainer .registerSection h1 {
+    font-size: 9rem;
+}
+
+main .registerContainer .registerSection p {
+    font-size: 2rem;
+}
+
+main .registerContainer .registerSection a{
+    margin-top: 20px;
+    width: 160px;
+    height: 56px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main .registerContainer .registerSection span {
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+main .registerContainer .registerSection a img {
+    width: 26px;
+    height: auto;
+}
+
+main .introductionContainer {
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+    padding-bottom: 80px;
+    gap: 190px;
+    border-bottom: 2px solid white;
+}
+
+main .introductionContainer .introductionSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .introductionContainer .introductionSection h1 {
+    font-size: 4.8rem;
+}
+
+main .introductionContainer .introductionSection p {
+    width: 680px;
+    font-size: 20px;
+}
+
+main .introductionContainer img {
+    width: 28%;
+    height: 30%;
+}
+
+
+main .featuresContainer h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 800;
+    margin-bottom: 100px;
+} 
+
+
+
+main .featuresContainer img {
+    width: 100px;
+    height: 100px;
+}
+
+main .featuresContainer .cardSection {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+main .featuresContainer .cardSection .card {
+    gap: 20px;
+    display: flex;  
+    width: 560px;
+    height: 300px;
+}
+
+main .featuresContainer .cardSection .card h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+main .featuresContainer .cardSection .card p {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+footer {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+ 
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+footer .imgsContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer p {
+   margin: 0 auto;
+}
+
+
+
+@media (max-width: 1500px) {
+    
+main .registerContainer .registerSection h1 {
+    font-size: 6rem;
+}
+main .registerContainer .registerSection p {
+    font-size: 1.4rem;
+}
+
+main .introductionContainer .introductionSection h1 {
+    font-size: 3rem;
+}
+main .introductionContainer .introductionSection p {
+    width: 500px;
+    font-size: 16px;
+}
+}
+
+
+
+@media (max-width: 1220px) {
+    main .introductionContainer {
+        gap: 50px;
+    }
+}

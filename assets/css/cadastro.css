@@ -80,6 +80,10 @@ form {
     width: 100%;
 }
 
+input {
+    color: #D8ECFE;
+}
+
 #input-nomes {
     display: flex;
     gap: 20px;

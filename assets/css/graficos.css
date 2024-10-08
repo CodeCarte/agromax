@@ -26,15 +26,33 @@ aside {
     text-align: start;
     background-color: #DBF2FF;
     font-weight: 500;
+
 }
 
+
 .lista-links {
+    list-style: none;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 40px;
-    align-items: center;
+    align-items:  center;
+    justify-content: center;
+    flex-grow: 1;
 }
+
+.lista-links a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.link-recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .img-links {
     height: 16px;
@@ -69,37 +87,86 @@ button:hover {
     margin-bottom: 20px;
 }
 
-
 main {
+    padding: 20px;
     display: flex;
     justify-content: center;
+    max-width: 100%;
+}
+
+main .graphsContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;    
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+main .graphsCard {
+    display: flex;
+    flex-direction: column ;
     align-items: center;
-    width: 100%;
-    padding: 20px;
-}
-/*
------------------------------------
-*/
-
-.conteudo {
-    text-align: center;
-    margin-top: -760px;
-    margin-right: 757px;
-    overflow: visible;
+    justify-content: center;
+    width: 340px;
+    border-radius: 20px;
+    height: 240px;
+    background-color: white;
 }
 
-.conteudo h1 {
-    color: #DBF2FF;
-    font-weight: 500;
-    font-size: 48px;
-    margin-bottom: 2px;
-    white-space: nowrap;
+
+main svg {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
 }
 
-.conteudo hr {
-    margin: 0 auto;
-    max-width: 85%;
+main .number {
+    position: relative;
+    bottom: 56px;
+    left: 0px;
 }
+
+main svg circle {
+    display: flex;
+    fill: none;
+    stroke: #124975;
+    stroke-width: 14;
+    stroke-linecap: round;
+}
+
+main svg #circle1 {
+    stroke-dasharray: 130;
+    stroke-dashoffset: 70;
+}
+
+main svg #circle2 {
+    stroke-dasharray: 251.33;
+    stroke-dashoffset: 62.83;
+}
+
+main svg #circle3 {
+    stroke-dasharray: 251.33;
+    stroke-dashoffset: 188.50;
+}
+
+main svg #circle4 {
+    stroke-dasharray: 251.33;
+    stroke-dashoffset: 150.80;
+}
+
+
+
+
+@media (max-width: 969px) {
+    main {
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
 
 
 

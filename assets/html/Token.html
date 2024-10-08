@@ -9,11 +9,13 @@
   </head>
   <body>
     <aside>
-      <img
+      <a href="../../index.html">
+        <img
         class="logo"
         src="../imgs/logo.svg"
         alt="logo da agromax"
-      />
+        />
+      </a>
       <nav>
         <ul class="lista-links">
           <li>
@@ -34,7 +36,9 @@
             </button>
           </li>
           <li>
-            <button class="link-recomendacoes">Recomendações </button>
+            <a href="./recomendacoes.html">
+              <button class="link-recomendacoes">Recomendações</button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -43,7 +47,7 @@
     <main>
       <div class="conteudo">
         <h1>Insira o token de identificação do aparelho:</h1>
-        <input type="text" id="token-input" placeholder="Formato(ABC-1234-XY)" required/> <!--Formato: ABC-1234-XY-->
+        <input value="ABC-1234-XY" type="text" id="token-input" placeholder="Formato(ABC-1234-XY)" required/> <!--Formato: ABC-1234-XY-->
       </div>
     </main>
 

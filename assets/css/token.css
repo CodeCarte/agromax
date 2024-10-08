@@ -32,6 +32,16 @@ aside {
     align-items:  center;
 }
 
+.lista-links a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.link-recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-links{
     height: 16px;
     width: 16px;
@@ -95,5 +105,6 @@ main{
     outline: none;
     background-color: rgba(97, 121, 153, 0.13);
     font-family: "Josefin Sans", sans-serif;
+    color: #DBF2FF;
 }
 

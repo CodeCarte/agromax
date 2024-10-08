@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/graficos.css">
-    <link rel="stylesheet" href="../css/rodagrafico.css">
     <title>Análise dos Dados Coletados</title>
 </head>
 <body>
 
     <aside>
-        <img
+        <a href="../../index.html">
+          <img
           class="logo"
           src="../imgs/logo.svg"
           alt="logo da agromax"
-        />
+          />
+        </a>
         <nav>
           <ul class="lista-links">
             <li>
@@ -35,43 +36,59 @@
               </button>
             </li>
             <li>
-              <button class="link-recomendacoes">Recomendações </button>
+              <a href="./recomendacoes.html">
+                <button class="link-recomendacoes">Recomendações</button>
+              </a>
             </li>
           </ul>
         </nav>
       </aside>
 
-
       <main>
-        <div class="conteudo">
-            <h1>Seção de Resumo Geral</h1>
-            <hr>
-        </div>
+        <div class="graphsContainer">
 
-        <div class="rodagrafico-container">
-            <div class="rodagrafico__body">
-                <div class="roda__fill"></div>
-                <div class="roda__cover">50%</div>
+          <section class="graphsCard">
+            <h3>Umidade da plantação:</h3>
+            <svg>
+              <circle id="circle1" cx="50" cy="50" r="40" fill="blue" />
+            </svg>
+            <div class="number">
+              <p>50%</p>
             </div>
+          </section>
+
+          <section class="graphsCard">
+            <h3>Chance de chuva:</h3>
+            <svg>
+              <circle id="circle2" cx="50" cy="50" r="40" fill="blue" />
+            </svg>
+            <div class="number">
+              <p>75%</p>
+          </section>
+
+          <section class="graphsCard">
+            <h3>Reservatório de água:</h3>
+            <svg>
+              <circle id="circle3" cx="50" cy="50" r="40" fill="blue" />
+            </svg>
+            <div class="number">
+              <p>25%</p>
+          </section>
+
+          <section class="graphsCard">
+            <h3>Uso de água na irrigação:</h3>
+            <svg>
+              <circle id="circle4" cx="50" cy="50" r="40" fill="blue" />
+            </svg>
+            <div class="number">
+              <p>40%</p>
+          </section>
+
         </div>
       </main>
 
 
 
-
-      <script>
-        const rodaElemento = document.querySelector(".rodagrafico-container");
-
-        function mudarValorRoda(rodaElemento, valor){
-
-            if (value < 0 || value > 1) {
-                return;
-            }
-
-            roda.querySelector(".roda__fill").style.transform = `rotate(${valor / 2}turn)`;
-
-        }
-      </script>
     
 </body>
 </html>
