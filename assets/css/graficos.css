@@ -98,8 +98,8 @@ main .graphsContainer {
     margin-top: 40px;
     display: flex;
     justify-content: center;    
-    gap: 80px;
     flex-wrap: wrap;
+    gap: 0px 80px;
 }
 
 main .graphsCard {
