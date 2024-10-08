@@ -133,6 +133,7 @@ main .recomendations {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    font-size: 18px;
 }
 
 
