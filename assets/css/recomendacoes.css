@@ -131,14 +131,19 @@ main .topic-container h2 {
 main .recomendations {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     font-size: 18px;
+}
+
+main li {
+    list-style: none;
+    margin-bottom: 2px;
 }
 
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1210px) {
     main .card-container img {
         width: 60px;
         height: 60px;
