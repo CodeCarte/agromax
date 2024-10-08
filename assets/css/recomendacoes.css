@@ -104,7 +104,7 @@ main .card-container {
     padding: 26px;
     display: flex;
     gap: 60px;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 80%;
     height: 500px;
     background-color: #617999;
@@ -129,6 +129,7 @@ main .topic-container h2 {
 }
 
 main .recomendations {
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -143,7 +144,7 @@ main li {
 
 
 
-@media (max-width: 1210px) {
+@media (max-width: 1300px) {
     main .card-container img {
         width: 60px;
         height: 60px;
