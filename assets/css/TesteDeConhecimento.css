@@ -38,21 +38,38 @@ h1 {
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 600;
 }
 
-.form-group {
-    margin-bottom: 30px;
+.header {
+    margin-bottom: 60px;
 }
 
+.form-group {
+    margin-bottom: 40px;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
 .form-group label {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 22px;
-    display: block;
     margin-bottom: 5px;
+    gap: 5px
 }
 
 .form-group input {
@@ -62,6 +79,7 @@ p {
 input[type="radio"] {
     transform: scale(1.5);
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 
@@ -71,6 +89,7 @@ input[type="radio"] {
 }
 
 .button {
+    font-family: "Josefin Sans", sans-serif;
     background-color: #DBF2FF;
     color: black;
     padding: 10px 20px;
@@ -78,13 +97,11 @@ input[type="radio"] {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-family: "Josefin Sans" sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .button:hover {
-    background-color: black;
-    color: white;
+    background-color: #C0E1FA;
 }
 
 
