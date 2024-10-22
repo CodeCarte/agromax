@@ -9,73 +9,71 @@
 <body>
 
 <div class="container">
-    <h1>Dados Importantes</h1>
-    <hr id="line">
-    <p>Aqui estão os dados que serão usados para ajustar o nível da nossa IA de forma a atender suas necessidades específicas.</p>
+    <div class="header">
+        <h1>Dados Importantes</h1>
+        <hr id="line">
+        <p>Aqui estão os dados que serão usados para ajustar o nível da nossa IA de forma a atender suas necessidades específicas.</p>
+    </div>
 
 <form action="../html/Dashboard.html">
     <div class="form-group">
-        <label>Qual é seu nivel de escolaridade?</label>
-            <label><input type="radio" name="escolaridade" required>Ensino Fundamental incompleto</label>
-            <label><input type="radio" name="escolaridade" required>Ensino Fundamental completo</label>
-            <label><input type="radio" name="escolaridade" required>Ensino Médio completo</label>
-            <label><input type="radio" name="escolaridade" required>Ensino Superior</label>
+        <label>Você conhece formas de controlar pragas?</label>
+        <div class="radio-group">
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Não sei</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Já ouvi falar, mas não uso</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Uso algumas técnicas simples</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Uso sempre e com cuidado</label></div>
+        </div>
     </div>
 
     <div class="form-group">
         <label>Você conhece o conceito de rotação de culturas?</label>
-            <label><input type="radio" name="rotacao" required>Não conheço</label>
-            <label><input type="radio" name="rotacao" required>Já ouvi falar, mas não aplico</label>
-            <label><input type="radio" name="rotacao" required>Aplico ocasionalmente</label>
-            <label><input type="radio" name="rotacao" required>Aplico regularmente</label>
+        <div class="radio-group">
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Não conheço</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Já ouvi falar, mas não aplico</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Aplico as vezes</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Aplico regularmente</label></div>
+        </div>
     </div>
 
     <div class="form-group">
         <label>Com que frequência você utiliza tecnologia, como celular ou computador, para administrar sua fazenda?</label>
-            <label><input type="radio" name="tecnologia" required>Não conheço</label>
-            <label><input type="radio" name="tecnologia" required>Já ouvi falar, mas não aplico</label>
-            <label><input type="radio" name="tecnologia" required>Aplico ocasionalmente</label>
-            <label><input type="radio" name="tecnologia" required>Aplico regularmente</label>
-    </div>
-
-    <div class="form-group">
-        <label>Você conhece o conceito de rotação de culturas?</label>
-            <label><input type="radio" name="amor" required>Não conheço</label>
-            <label><input type="radio" name="amor" required>Já ouvi falar, mas não aplico</label>
-            <label><input type="radio" name="amor" required>Aplico ocasionalmente</label>
-            <label><input type="radio" name="amor" required>Aplico regularmente</label>
+        <div class="radio-group">
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Nunca</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Sempre</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>As vezes</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Não sei</label></div>
+        </div>
     </div>
 
     <div class="form-group">
         <label>Você sabe como preparar o solo antes de plantar?</label>
-            <label><input type="radio" name="cac" required>Já ouvi falar, mas não sei como fazer</label>
-            <label><input type="radio" name="cac" required>Sei um pouco, mas não faço sempre</label>
-            <label><input type="radio" name="cac" required>Faço regularmente</label>
-            <label><input type="radio" name="cac" required>Faço as vezes</label>
+        <div class="radio-group">
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Já ouvi falar, mas não sei como fazer</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Sei um pouco, mas não faço sempre</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Faço regularmente</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Faço as vezes</label></div>
+        </div>
     </div>
 
     <div class="form-group">
         <label>Você entende por que é importante cuidar do solo?</label>
-            <label><input type="radio" name="daf" required>Não sei</label>
-            <label><input type="radio" name="daf" required>Já ouvi falar, mas não sei como cuidar</label>
-            <label><input type="radio" name="daf" required>Entendo, mas cuido só às vezes</label>
-            <label><input type="radio" name="daf" required> Entendo e cuido bem do solo</label>
+        <div class="radio-group">
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Não sei</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Já ouvi falar, mas não sei como cuidar</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Entendo, mas cuido só às vezes</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Entendo e cuido bem do solo</label></div>
+        </div>
     </div>
 
     <div class="form-group">
         <label>Você sabe como usar fertilizantes?</label>
-            <label><input type="radio" name="gag" required>Não sei</label>
-            <label><input type="radio" name="gag" required> Sei um pouco, mas não uso</label>
-            <label><input type="radio" name="gag" required>Uso de vez em quando</label>
-            <label><input type="radio" name="gag" required>Uso sempre e planejo como usar</label>
-    </div>
-
-    <div class="form-group">
-        <label>Você conhece formas de controlar pragas?</label>
-            <label><input type="radio" name="fff" required>Não sei</label>
-            <label><input type="radio" name="fff" required>Já ouvi falar, mas não uso</label>
-            <label><input type="radio" name="fff" required> Uso algumas técnicas simples</label>
-            <label><input type="radio" name="fff" required>Uso sempre e com cuidado</label>
+        <div class="radio-group">
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Não sei</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Sei um pouco, mas não uso</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Uso de vez em quando</label></div>
+                <div class="radio-item"><label><input type="radio" name="escolaridade" required>Uso sempre e planejo como usar</label></div>
+        </div>
     </div>
 
     <div class="buttons">

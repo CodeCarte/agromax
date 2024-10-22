@@ -38,21 +38,38 @@ h1 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.05rem;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 600;
 }
 
-.form-group {
-    margin-bottom: 30px;
+.header {
+    margin-bottom: 60px;
 }
 
+.form-group {
+    margin-bottom: 40px;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
 .form-group label {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 22px;
-    display: block;
     margin-bottom: 5px;
+    gap: 5px
 }
 
 .form-group input {
@@ -62,6 +79,7 @@ p {
 input[type="radio"] {
     transform: scale(1.5);
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 
@@ -79,7 +97,7 @@ input[type="radio"] {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .button:hover {
