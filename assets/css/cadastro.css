@@ -89,11 +89,12 @@ form {
     border-radius: 8px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 20px;
     width: calc(50% - 5px);
     font-family:  var(--font-principal);
     background-color: rgba(97, 121, 153, 0.53);
     text-align: center;
+    color: #D8ECFE;
 }
 
 #input-dados {
@@ -111,10 +112,16 @@ form {
     border-radius: 8px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     font-family:  var(--font-principal);
     background-color: rgba(97, 121, 153, 0.53);
+    color: #D8ECFE;
+}
+
+input::placeholder {
+    font-size: 20px; 
+    color: red;      
 }
 
 #checkbox-input {
@@ -152,10 +159,9 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
 }
 
-.form-container button:hover {
+button:hover{
     background-color: #C0E1FA;
     border-color: #80d0ff;
     border-style: solid;
@@ -164,7 +170,6 @@ button {
     0 0 20px rgba(128, 208, 255, 0.6), 
     0 0 30px rgba(128, 208, 255, 0.4);
 }
-
 
 .img-fechar {
     position: relative;
@@ -181,10 +186,11 @@ img{
 
 .link-style{
     text-decoration: none;
-    color: #BFDFF8;
+    color: #B2DDF9;
     text-decoration: underline;
     margin-left: 5px;
 }
+
 
 input::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -193,5 +199,29 @@ input::placeholder {
 }
 
 
+#showing-password {
 
+    position: absolute;
+    bottom: 300px;
+    left: 98px;
+    display: flex;
+    align-items: center;
+    font-family:  var(--font-principal);
+}
+
+#show-password {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+#showing-password-text {
+    color: rgba(219, 242, 255, 1);
+}
+
+.custom-checkbox #show-password {
+    color: rgba(219, 242, 255, 1);
+}
 
