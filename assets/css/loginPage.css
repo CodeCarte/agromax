@@ -133,7 +133,7 @@ input, button {
     border-radius: 15px;
     background-color: rgba(97, 121, 153, 0.53);
     text-align: start;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #D8ECFE;
 
 }
@@ -147,12 +147,12 @@ input::placeholder {
 button {
     background-color: #D8ECFE;
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 25px;
     width: 100%;
     color: black;
     font-size: 23px;
-    font-weight: 600;
+    font-weight: 550;
     cursor: pointer;
     margin-top: 40px;
     display: flex;
@@ -170,3 +170,29 @@ button:hover {
     0 0 20px rgba(128, 208, 255, 0.6), 
     0 0 30px rgba(128, 208, 255, 0.4);
 }
+
+#showing-password {
+
+    position: absolute;
+    bottom: 190px;
+    left: 65px;
+    display: flex;
+    align-items: center;
+}
+
+#show-password {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+#showing-password-text {
+    color: rgba(219, 242, 255, 1);
+}
+
+.custom-checkbox #show-password {
+    color: rgba(219, 242, 255, 1);
+}
+
