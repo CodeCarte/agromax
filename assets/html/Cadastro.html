@@ -13,12 +13,12 @@
           <h1>Crie uma conta</h1>
           <p>já tem uma conta? <a class="link-style" href="">Log in</a></p>
         </div>
-        <div class="img-fechar">
-          <img
-            src="./assets/imgs/close.svg"
-            alt=""
-          />
-        </div>
+          <div class="img-fechar">
+            <img
+              src="../imgs/close.svg"
+              alt=""
+              />
+            </div>
 
         <form>
           <div id="input-nomes">
@@ -28,12 +28,17 @@
 
           <div id="input-dados">
             <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Senha" />
+            <input type="password" id="senha" placeholder="Senha" />
           </div>
 
           <div id="checkbox-input">
             <input type="checkbox" />Eu concordo com os
             <a class="link-style" href="">termos de serviços</a>
+          </div>
+
+          <div id="showing-password">
+            <input type="checkbox" id="show-password">
+            <span id="showing-password-text">Mostrar senha</span>
           </div>
 
           <div>
@@ -42,9 +47,24 @@
         </form>
       </div>
     </div>
+
     <div class="video-container">
       <video autoplay muted loop id="background-video">
           <source src="../videos/backgroundvideo.mp4" type="video/mp4">
-    </div>
+    </div> 
+
+  <script>
+      const passwordInput = document.getElementById("senha");
+      const showPasswordCheckbox = document.getElementById("show-password");
+  
+      showPasswordCheckbox.addEventListener("change", function() {
+          if (this.checked) {
+              passwordInput.type = "text";
+          } else {
+              passwordInput.type = "password";
+          }
+      });
+  </script>
+
   </body>
 </html>
