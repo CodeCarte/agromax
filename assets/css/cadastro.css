@@ -53,8 +53,6 @@ body {
     border-radius: 10px;
     width: 650px;
     height: 650px;
-    text-align: center;
-    color: #DBF2FF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -151,7 +149,8 @@ button {
     width: 467.5px;
     height: 66px;
     color: black;
-    font-size: 16px;
+    font-size: 23px;
+    font-family: "Josefin Sans", sans-serif;
     cursor: pointer;
     font-weight: 550;
     margin-top: 70px;
@@ -185,7 +184,6 @@ img{
 }
 
 .link-style{
-    text-decoration: none;
     color: #B2DDF9;
     text-decoration: underline;
     margin-left: 5px;

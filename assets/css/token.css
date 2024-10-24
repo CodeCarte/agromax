@@ -3,12 +3,13 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
 }
 body{
     background-color: #124975;
+    height: 100vh;
     display: flex;
+    overflow: hidden;
     font-family: "Josefin Sans", sans-serif;
 }
 
@@ -28,8 +29,10 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 40px;
     align-items:  center;
+    justify-content: center;
+    margin-top: 40px;
+
 }
 
 .lista-links a {
@@ -48,7 +51,7 @@ aside {
     margin-left: 16px;
 }
 
-aside button{
+ aside button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,10 +65,12 @@ aside button{
     cursor: pointer;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover{
+aside button:hover{
     background-color: #516585;
+    transform: scale(1.05);
 }
 
 .logo{

@@ -43,8 +43,14 @@
           </ul>
         </nav>
       </aside>
+
+
       <main>
         <div class="main-container">
+
+      <div class="carousel-container">
+        <div class="carousel">
+
             <section class="card-container">
                 <div class="topic-container">
                     <img src="/assets/imgs/recomendationIcon.png" alt="icone de alerta">
@@ -57,7 +63,6 @@
     
                         </p>
                     </div>
-                   
                 </div>
                 <div class="recomendations">
                     <ul>
@@ -78,37 +83,108 @@
                         <li>Observação: Clima favorável e maturidade adequada</li>
                     </ul>
                 </div>
-            </section>
-            <section class="card-container">
-                <div class="topic-container">
-                    <img src="/assets/imgs/recomendationIcon.png" alt="icone de alerta">
-                    <div class="recomendation-text">
-                        <h2>Praga Identificada: Lagarta-do-cartucho (Spodoptera frugiperda)</h2>
-                        <p>
-                            Alertas Críticos: <br>
-                            Atenção! Umidade do solo abaixo de 30% - <br>
-                             aumentar a irrigação imediatamente. <br>
-    
-                        </p>
-                    </div>    
-                </div>
-                <div class="recomendations">
-                    <ul>
-                        <li class="titleTopicRecomendations">1. Recomendações</li>
-                        <li> Aplicar controle biológico usando Trichogramma,
-                             um parasitóide natural de ovos da lagarta,
-                              para minimizar a infestação sem o uso de pesticidas químicos.</li>
-                    </ul>
 
-                    <ul>
-                        <li class="titleTopicRecomendations">2. Justificativa</li>
-                        <li>O controle biológico é mais sustentável
-                             e seguro para o meio ambiente, além de
-                              reduzir o impacto em culturas vizinhas e na biodiversidade local.</li>
-                    </ul>
-                </div>
             </section>
+
+
+            <section class="card-container">
+              <div class="topic-container">
+                  <img src="/assets/imgs/recomendationIcon.png" alt="icone de alerta">
+                  <div class="recomendation-text">
+                      <h2>Umidade do solo abaixo do ideal</h2>
+                      <p>
+                          Alertas Críticos: <br>
+                          Atenção! Umidade do solo abaixo de 30% - <br>
+                           aumentar a irrigação imediatamente. <br>
+  
+                      </p>
+                  </div>
+              </div>
+              <div class="recomendations">
+                  <ul>
+                      <li class="titleTopicRecomendations">1. Irrigação:</li>
+                      <li>Quantidade: Aplicar 20 litros por hectare</li>
+                      <li>Observação: Condições de seca detectadas</li>
+                  </ul>
+
+                  <ul>
+                      <li class="titleTopicRecomendations">2. Fertilizantes</li>
+                      <li>Tipo: Fertilizante NPK 10-10-10</li>
+                      <li>Quantidade: 50kg por hectare</li>
+                  </ul>
+
+                  <ul>
+                      <li class="titleTopicRecomendations">3. Colheita</li>
+                      <li>Momento Ideal: Colher em 7 dias</li>
+                      <li>Observação: Clima favorável e maturidade adequada</li>
+                  </ul>
+              </div>
+
+          </section>
+        </div>
+
+        <button id="prevBtn">↑</button>
+        <button id="nextBtn">↓</button>
+
+      </div>
         </div>
       </main>
+
+
+
+
+      
+<script>
+  
+  const carousel = document.querySelector('.carousel');
+  const cards = document.querySelectorAll('.card-container');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateY(-${currentIndex * 100}%)`; 
+  }
+
+  nextBtn.addEventListener('click', () => {
+
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  carousel.addEventListener('wheel', (event) => {
+
+    if (event.deltaY > 0) {
+
+      if (currentIndex < cards.length - 1) {
+        
+        currentIndex++;
+        updateCarousel();
+      }
+    }
+
+    else {
+      if (currentIndex > 0) {
+        
+        currentIndex--;
+        updateCarousel();
+      }
+    }
+  });
+
+</script>
 </body>
+
+
 </html>
