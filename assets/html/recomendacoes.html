@@ -52,18 +52,20 @@
         <div class="carousel">
 
             <section class="card-container">
-                <div class="topic-container">
-                    <img src="/assets/imgs/recomendationIcon.png" alt="icone de alerta">
-                    <div class="recomendation-text">
-                        <h2>Umidade do solo abaixo do ideal</h2>
-                        <p>
-                            Alertas Críticos: <br>
-                            Atenção! Umidade do solo abaixo de 30% - <br>
-                             aumentar a irrigação imediatamente. <br>
-    
-                        </p>
-                    </div>
-                </div>
+
+              <div class="icon-container">
+                <img src="/assets/imgs/recomendationIcon.png" alt="Ícone de Alerta">
+              </div>
+
+              <div class="alert-container">
+                <h2>Umidade do solo abaixo do ideal</h2>
+                <p>Atenção! Umidade do solo abaixo de 30% - aumentar a irrigação imediatamente.</p>
+              </div>
+
+              <div class="graph-container">
+                <img src="/assets/imgs/graph-placeholder.png" alt="Gráfico relacionado ao problema">
+              </div>
+
                 <div class="recomendations">
                     <ul>
                         <li class="titleTopicRecomendations">1. Irrigação:</li>
@@ -88,19 +90,21 @@
 
 
             <section class="card-container">
-              
-              <div class="topic-container">
-                  <img src="/assets/imgs/recomendationIcon.png" alt="icone de alerta">
-                  <div class="recomendation-text">
-                      <h2>Umidade do solo abaixo do ideal</h2>
-                      <p>
-                          Alertas Críticos: <br>
-                          Atenção! Umidade do solo abaixo de 30% - <br>
-                           aumentar a irrigação imediatamente. <br>
-  
-                      </p>
-                  </div>
+            
+              <div class="icon-container">
+                <img src="/assets/imgs/recomendationIcon.png" alt="Ícone de Alerta">
               </div>
+
+              <div class="alert-container">
+                <h2>Umidade do solo abaixo do ideal</h2>
+                <p>Atenção! Umidade do solo abaixo de 30% - aumentar a irrigação imediatamente.</p>
+              </div>
+
+              <div class="graph-container">
+                <img src="/assets/imgs/graph-placeholder.png" alt="Gráfico relacionado ao problema">
+              </div>
+
+
               <div class="recomendations">
                   <ul>
                       <li class="titleTopicRecomendations">1. Irrigação:</li>
@@ -131,12 +135,7 @@
         </div>
       </main>
 
-
-
-
-      
 <script>
-  
   const carousel = document.querySelector('.carousel');
   const cards = document.querySelectorAll('.card-container');
   const nextBtn = document.getElementById('nextBtn');
@@ -146,6 +145,26 @@
 
   function updateCarousel() {
     carousel.style.transform = `translateY(-${currentIndex * 100}%)`; 
+    updateButtons();
+  }
+
+  function updateButtons() {
+    if (currentIndex === 0) {
+      prevBtn.style.display = 'none';
+    } 
+
+    else {
+      prevBtn.style.display = 'block';
+    }
+
+
+    if (currentIndex === cards.length - 1) {
+      nextBtn.style.display = 'none';
+    }
+
+    else {
+      nextBtn.style.display = 'block'
+    }
   }
 
   nextBtn.addEventListener('click', () => {
@@ -166,6 +185,8 @@
 
   carousel.addEventListener('wheel', (event) => {
 
+    event.preventDefault();
+
     if (event.deltaY > 0) {
 
       if (currentIndex < cards.length - 1) {
@@ -184,6 +205,7 @@
     }
   });
 
+  updateButtons();
 </script>
 </body>
 

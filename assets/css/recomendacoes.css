@@ -101,7 +101,7 @@ main .main-container {
 
 
 main .card-container {
-    background: linear-gradient(135deg, #617999, #89a4c7);
+    background: linear-gradient(135deg, #124975, #124975);
     transition: transform 0.3s, box-shadow 0.3s;
     flex: 0 0 100%;
     width: 100%;
@@ -113,7 +113,34 @@ main .card-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.icon-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.alert-container {
+    text-align: center;
+}
+
+.alert-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #DBF2FF;
+}
+
+.alert-container p {
+    font-size: 19px;
+    color: #DBF2FF;
+}
+
+.graph-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 main .card-container:hover {
@@ -149,6 +176,7 @@ main .topic-container h2 {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
+    color: #ffffffff;
 }
 
 main .topic-container p {
@@ -160,20 +188,21 @@ main .topic-container p {
 main .recomendations {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    font-size: 18px;
-    gap: 20px;
+    width: 80%;
+    max-width: 600px;
+    gap: 15px;
 }
 
 main .recomendations ul {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
 }
 
 main .recomendations li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    color: #DBF2FF;
+    font-size: 16px;
 }
 
 main li {
@@ -227,7 +256,29 @@ main li {
 }
 
 
+@media (max-width: 768px) {
 
+    .icon-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .alert-container h2 {
+        font-size: 24px;
+    }
+
+    .alert-container p, .titleTopicRecomendations, main .recomendations li {
+        font-size: 14px;
+    }
+
+    .graph-container {
+        width: 90%;
+    }
+
+    main .recomendations {
+        width: 90%;
+    }
+}
 
 @media (max-width: 1300px) {
 
