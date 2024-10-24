@@ -125,7 +125,7 @@ input::placeholder {
 #checkbox-input {
     display: flex;
     position: relative;
-    right: 73px;
+    right: 79px;
     top: 9px;
     align-items: center;
     margin-top: 10px;
@@ -223,3 +223,40 @@ input::placeholder {
     color: rgba(219, 242, 255, 1);
 }
 
+#input-senha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: 20px;
+    position: relative;
+    top: 26px;
+}
+
+#input-senha input {
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    font-family:  var(--font-principal);
+    background-color: rgba(97, 121, 153, 0.53);
+    color: #D8ECFE;
+}
+
+#icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url('../imgs/olho-fechado.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#icon.hide{
+    background: url('../imgs/olho.png');
+    background-size: cover;
+}

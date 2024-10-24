@@ -172,28 +172,20 @@ button:hover {
     background-color: #C0E1FA;
 }
 
-#showing-password {
 
+#icon{
     position: absolute;
-    bottom: 190px;
-    left: 65px;
-    display: flex;
-    align-items: center;
-}
-
-#show-password {
-    width: 20px;
-    height: 20px;
-    margin-right: 7px;
-    margin-bottom: 4px;
+    top: 322px;
+    right: 70px;
+    background: url('../imgs/olho-fechado.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
-#showing-password-text {
-    color: rgba(219, 242, 255, 1);
-}
-
-.custom-checkbox #show-password {
-    color: rgba(219, 242, 255, 1);
+#icon.hide{
+    background: url('../imgs/olho.png');
+    background-size: cover;
 }
 
