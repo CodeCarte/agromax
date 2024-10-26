@@ -6,11 +6,10 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #124975;
     height: 100vh;
     display: flex;
-    overflow: hidden;
     font-family: "Josefin Sans", sans-serif;
+    overflow: hidden;
 }
 
 aside {
@@ -32,6 +31,7 @@ aside {
     align-items:  center;
     justify-content: center;
     margin-top: 40px;
+    list-style: none;
 
 }
 
@@ -80,11 +80,13 @@ aside button:hover{
 }
 
 main{
+    background-color: #124975;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    flex-grow: 1;
+    overflow: hidden;
+
 }
 
 .conteudo h1{

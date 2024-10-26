@@ -46,7 +46,14 @@ aside {
     justify-content: center;
 }
 
-button{
+.img-links{
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+}
+
+
+aside button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +70,7 @@ button{
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover{
+aside button:hover{
     background-color: #516585;
     transform: scale(1.05);
 }
@@ -73,14 +80,6 @@ button:hover{
     height: auto;
     margin-bottom: 20px;
  }
-
-
- .img-links{
-    height: 16px;
-    width: 16px;
-    margin-left: 16px;
-}
-
 
 main {
     background-color: #124975;

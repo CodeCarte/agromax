@@ -30,7 +30,7 @@
                 </div>
                 <div id="input-senha">
                     <input type="password" id="senha" placeholder="Senha" required>
-                    <div id="icon" onclick="showHide()"></div>
+                    <span id="icon" onclick="showHide()"></span>
                 </div>
                 
             </div>
@@ -45,7 +45,7 @@
     <script>
         const senha = document.getElementById("senha");
         const icon = document.getElementById("icon");
-    
+
         function showHide(){
             if(senha.type === "password"){
             senha.setAttribute('type','text');

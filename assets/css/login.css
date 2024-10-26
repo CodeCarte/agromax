@@ -146,6 +146,12 @@ input, button {
 }
 
 
+#input-senha input {
+    width: 100%;
+    padding-right: 50px;
+}
+
+
 input::placeholder {
     color: rgba(255, 255, 255, 0.6);
     font-size: 20px;
@@ -177,7 +183,7 @@ button:hover {
     position: absolute;
     top: 322px;
     right: 70px;
-    background: url('../imgs/olho-fechado.png');
+    background: url('../imgs/olho-fechado.png') no-repeat center;
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -185,7 +191,7 @@ button:hover {
 }
 
 #icon.hide{
-    background: url('../imgs/olho.png');
-    background-size: cover;
+    background: url('../imgs/olho.png') no-repeat center;
+    background-size: contain;
 }
 

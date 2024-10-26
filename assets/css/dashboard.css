@@ -8,9 +8,10 @@
 
 body {
     display: flex;
-    
+    height: 100vh;
     font-family: "Josefin Sans", sans-serif;
     color: #DBF2FF;
+    overflow: hidden;
 }
 
 aside {
@@ -26,8 +27,6 @@ aside {
 }
 
 
-
-
 .lista-links {
     display: flex;
     flex-direction: column;
@@ -35,6 +34,7 @@ aside {
     align-items:  center;
     margin-top: 40px;
     justify-content: center;
+    list-style: none;
 }
 
 .lista-links a {
@@ -47,7 +47,13 @@ aside {
     justify-content: center;
 }
 
-button{
+.img-links{
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+}
+
+aside button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +70,7 @@ button{
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover{
+aside button:hover{
     background-color: #516585;
     transform: scale(1.05);
 }
@@ -79,37 +85,40 @@ button:hover{
 main {
     background-color: #124975;
     flex-grow: 1;
-    width: 100%;
-    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 20px;
-    flex-wrap: wrap;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
 }
 
 main ul li {
     list-style:none ;
 }
 
-.img-links{
-    height: 16px;
-    width: 16px;
-    margin-left: 16px;
-}
-
 
 .introducao, .como-funciona, .beneficios, .como-adquirir {
-    margin-bottom: 60px;
     margin-top: 40px;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 8px;
     font-weight: 700;
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.6;
     margin-bottom: 16px;
     font-weight: 300;
