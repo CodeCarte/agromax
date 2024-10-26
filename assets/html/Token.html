@@ -53,13 +53,20 @@
           <button  class="token-button">Inserir</button>
         </div>
      </div>
-
     </main>
 
+    <div id="loading-screen">
+      <figure>
+        <div class="dot white"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </figure>
+    </div>
 
 
     <script>
-
       document.querySelector('.token-button').addEventListener("click", function(event) {
         event.preventDefault();
 
@@ -74,6 +81,10 @@
           alert("Token confirmado com sucesso!");
           alert("Por favor aguarde...");
 
+          document.querySelector('main').style.display = 'none';
+
+          document.getElementById('loading-screen').style.display = 'flex';
+          
           setTimeout(function() {
             alert("Coletando Dados...");
             alert("Redirecionando para a Página de Dados...");
