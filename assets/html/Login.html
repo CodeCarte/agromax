@@ -30,16 +30,11 @@
                 </div>
                 <div id="input-senha">
                     <input type="password" id="senha" placeholder="Senha" required>
+                    <div id="icon" onclick="showHide()"></div>
                 </div>
                 
             </div>
 
-
-
-                <div id="showing-password">
-                    <input type="checkbox" id="show-password">
-                    <span id="showing-password-text">Mostrar senha</span>
-                </div>
 
                 
                 <button id="login-btn" type="submit">Entrar</button>
@@ -47,17 +42,19 @@
         </div>
     </div>
 
-<script>
-    const passwordInput = document.getElementById("senha");
-    const showPasswordCheckbox = document.getElementById("show-password");
-
-    showPasswordCheckbox.addEventListener("change", function() {
-        if (this.checked) {
-            passwordInput.type = "text";
-        } else {
-            passwordInput.type = "password";
+    <script>
+        const senha = document.getElementById("senha");
+        const icon = document.getElementById("icon");
+    
+        function showHide(){
+            if(senha.type === "password"){
+            senha.setAttribute('type','text');
+            icon.classList.add('hide')
+        }else{
+            senha.setAttribute('type','password');
+            icon.classList.remove('hide') 
+            }
         }
-    });
-</script>
+    </script>
 </body>
 </html>
