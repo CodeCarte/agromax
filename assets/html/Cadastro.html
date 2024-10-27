@@ -11,7 +11,7 @@
       <div class="box-cadastro">
         <div class="titulos">
           <h1>Crie uma conta</h1>
-          <p>já tem uma conta? <a class="link-style" href="">Log in</a></p>
+          <p>já tem uma conta? <a class="link-style" href="../html/Login.html">Log in</a></p>
         </div>
           <div class="img-fechar">
             <img
@@ -20,31 +20,31 @@
               />
             </div>
 
-        <form>
+        <form action="../html/TesteDeConhecimento.html">
           <div id="input-nomes">
-            <input type="text" placeholder="Primeiro Nome" />
-            <input type="text" placeholder="Sobrenome">
+            <input type="text" placeholder="Primeiro Nome" required/>
+            <input type="text" placeholder="Sobrenome" required>
           </div>
 
           <div id="input-dados">
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" required/>
           </div>
 
           <div id="input-senha"> 
-          <input type="password" id="senha" placeholder="Senha">
+          <input type="password" id="senha" placeholder="Senha" required>
           <div id="icon" onclick="showHide()"></div>
             
           </div>
           
           <div id="checkbox-input">
-            <input type="checkbox" />Eu concordo com os
+            <input type="checkbox" required/>Eu concordo com os
             <a class="link-style" href="">termos de serviços</a>
           </div>
-
 
           <div>
             <button id="botao" type="submit">Crie uma conta</button>
         </div>
+
         </form>
       </div>
     </div>
