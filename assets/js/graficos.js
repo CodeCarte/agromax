@@ -1,5 +1,5 @@
-
 const slides = document.querySelectorAll('.graphsCard')
+const syncButton = document.querySelectorAll('.syncButton')
 const leftButton = document.getElementById('leftButton')
 const rightButton = document.getElementById('rightButton')
 
@@ -27,4 +27,11 @@ rightButton.addEventListener('click', () => {
         counter++
         slideImage()
     }
+})
+
+
+syncButton.forEach((element) => {
+    element.addEventListener('click', () => {
+        alert('Funcionalidade ainda não implementada')
+    })
 })

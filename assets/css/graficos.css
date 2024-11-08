@@ -108,19 +108,46 @@ main .graphsContainer {
 }
 
 main .graphsCard {
+    padding: 40px 20px;
     transition: 1s;
     position: absolute;
     display: flex;
-    flex-direction: column ;
-    align-items: center;
     justify-content: center;
+    gap: 80px;
     width: 100%;
     border-radius: 20px;
     height: 500px;
     background-color: white;
 }
 
+main .introductionGraphsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid black ;
+    background-color: #DBF2FF;
+    padding: 0px 20px;
+    color: rgb(37, 37, 37)
+}
 
+main .titleAndGraphContainer {
+    padding: 20px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+main .syncGraphContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 main svg {
     margin-top: 30px;
@@ -165,12 +192,53 @@ main svg #circle4 {
     stroke-dashoffset: 150.80;
 }
 
+main .general-info {
+    display: flex;
+    flex-direction: column;
+}
+
+main .general-info ul {
+    
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    gap: 18px;
+    list-style: none;
+}
+
+main .general-info ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .general-info ul li p {
+    width: 300px;
+}
+
+main .general-info ul li img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+main .general-info ul li .rainyPng {
+    position: relative;   
+    top: -6px;
+}
+
+
 
 main .buttonContainer {
     width: 60%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 200px;
 }
 
@@ -182,16 +250,27 @@ main button {
     padding: 20px;
     width: 100px;
     height: 40px;
-    background-color: white;
+    background-color: #617999;
+    color: rgb(255, 255, 255);
     outline: none;
     cursor: pointer;
     border: 2px transparent;
     border-radius: 20px;
-
+    border: 2px solid transparent;
+    transition: 0.4s;
 }
 
+main button:hover {
+    background-color: transparent;
+    border: 2px solid #516585;
+    color: black;
+}
 
-
+main button img {
+    
+    width: 20px;
+    height: auto;
+}
 
 
 
