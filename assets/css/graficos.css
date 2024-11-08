@@ -61,7 +61,7 @@ aside {
     
 }
 
-button {
+aside button {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +78,7 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
+aside button:hover {
     background-color: #516585;
     transform: scale(1.05);
 }
@@ -92,28 +92,34 @@ button:hover {
 main {
     padding: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 main .graphsContainer {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;    
-    flex-wrap: wrap;
-    gap: 0px 80px;
+    overflow: hidden;
+    margin-top: 120px;
+    width: 60%;
+    height: 500px;
+    position: relative;
 }
 
 main .graphsCard {
+    transition: 1s;
+    position: absolute;
     display: flex;
     flex-direction: column ;
     align-items: center;
     justify-content: center;
-    width: 340px;
+    width: 100%;
     border-radius: 20px;
-    height: 240px;
+    height: 500px;
     background-color: white;
 }
+
 
 
 main svg {
@@ -160,14 +166,32 @@ main svg #circle4 {
 }
 
 
-
-
-@media (max-width: 969px) {
-    main {
-        max-height: 100vh;
-        overflow-y: scroll;
-    }
+main .buttonContainer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
 }
+
+main button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border: 2px transparent;
+    border-radius: 20px;
+
+}
+
+
+
 
 
 

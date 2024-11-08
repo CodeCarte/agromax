@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/graficos.css">
+    <script src="../js/graficos.js" defer></script>
     <title>Análise dos Dados Coletados</title>
 </head>
 <body>
@@ -50,40 +51,47 @@
           <section class="graphsCard">
             <h3>Umidade da plantação:</h3>
             <svg>
-              <circle id="circle1" cx="50" cy="50" r="40" fill="blue" />
+                <circle id="circle1" cx="50" cy="50" r="40" fill="blue" />
             </svg>
             <div class="number">
-              <p>50%</p>
+                <p>50%</p>
             </div>
           </section>
-
+        
           <section class="graphsCard">
             <h3>Chance de chuva:</h3>
             <svg>
-              <circle id="circle2" cx="50" cy="50" r="40" fill="blue" />
+                <circle id="circle2" cx="50" cy="50" r="40" fill="blue" />
             </svg>
             <div class="number">
-              <p>75%</p>
+                <p>75%</p>
+            </div>
           </section>
-
+        
           <section class="graphsCard">
             <h3>Reservatório de água:</h3>
             <svg>
-              <circle id="circle3" cx="50" cy="50" r="40" fill="blue" />
+                <circle id="circle3" cx="50" cy="50" r="40" fill="blue" />
             </svg>
             <div class="number">
-              <p>25%</p>
+                <p>25%</p>
+            </div>
           </section>
-
+        
           <section class="graphsCard">
             <h3>Uso de água na irrigação:</h3>
             <svg>
-              <circle id="circle4" cx="50" cy="50" r="40" fill="blue" />
+                <circle id="circle4" cx="50" cy="50" r="40" fill="blue" />
             </svg>
             <div class="number">
-              <p>40%</p>
+                <p>40%</p>
+            </div>
           </section>
 
+        </div>
+        <div class="buttonContainer">
+          <button id="leftButton"> <= </button>
+          <button id="rightButton"> -> </button>
         </div>
       </main>
 

@@ -128,21 +128,23 @@ main{
 }
 
 .token-button {
-    padding: 24px 90px;
+    width: 120px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     margin-top: 16px;
     cursor: pointer;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    border: solid;
-    background-color: #DBF2FF;
+    font-size: 18px;
+    background-color: #516585;
+    color: #DBF2FF;
+    transition: 0.4s;
 }
 
 .token-button:hover {
     background-color: #C0E1FA;
+    color: black;
 }
 
 #loading-screen {

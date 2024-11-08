@@ -32,6 +32,7 @@ header .headerContainer {
     width: 100px;
     height: auto;
     margin-left: 22px;
+    margin-top: 6px;
 }
 
 .headerContainer nav {
@@ -48,7 +49,7 @@ header .headerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--font-color);
 }
@@ -113,7 +114,7 @@ main .registerContainer .registerSection a{
     width: 160px;
     height: 56px;
     background-color: black;
-    border: none;
+    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -121,6 +122,11 @@ main .registerContainer .registerSection a{
     gap: 18px;
     cursor: pointer;
     text-decoration: none;
+    transition: 0.4s;
+}
+main .registerContainer .registerSection a:hover {
+    background-color: #195b91;
+    border: 2px solid var(--font-color);
 }
 
 main .registerContainer .registerSection span {
@@ -256,5 +262,11 @@ main .introductionContainer .introductionSection p {
 @media (max-width: 1220px) {
     main .introductionContainer {
         gap: 50px;
+    }
+}
+
+@media(min-width: 1820px) {
+    main .introductionContainer .introductionSection h1 {
+        font-size: 6rem;
     }
 }
