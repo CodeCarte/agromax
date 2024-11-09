@@ -137,14 +137,15 @@ main{
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
-    background-color: #516585;
+    background-color: #617999;
     color: #DBF2FF;
     transition: 0.4s;
 }
 
 .token-button:hover {
-    background-color: #C0E1FA;
-    color: black;
+    background-color: transparent;
+    border: 2px solid #516585;
+    color: white;
 }
 
 #loading-screen {

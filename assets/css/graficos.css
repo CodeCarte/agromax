@@ -117,7 +117,7 @@ main .graphsCard {
     width: 100%;
     border-radius: 20px;
     height: 500px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 main .introductionGraphsSection {
@@ -129,7 +129,7 @@ main .introductionGraphsSection {
     border: 2px solid black ;
     background-color: #DBF2FF;
     padding: 0px 20px;
-    color: rgb(37, 37, 37)
+    color: black;
 }
 
 main .titleAndGraphContainer {
@@ -162,6 +162,11 @@ main .number {
     position: relative;
     bottom: 56px;
     left: 0px;
+}
+
+main .number p {
+    
+    color: black;
 }
 
 main svg circle {
@@ -201,6 +206,7 @@ main svg #circle4 {
 main .general-info {
     display: flex;
     flex-direction: column;
+    color: #DBF2FF;
 }
 
 main .general-info ul {
@@ -223,17 +229,13 @@ main .general-info ul li {
 }
 
 main .general-info ul li p {
-    width: 300px;
+    width: 290px;
 }
 
 main .general-info ul li img {
     width: 30px;
     height: auto;
 }
-
-
-
-
 
 
 
@@ -254,7 +256,7 @@ main button {
     width: 100px;
     height: 40px;
     background-color: #617999;
-    color: rgb(255, 255, 255);
+    color: white;
     outline: none;
     cursor: pointer;
     border: 2px transparent;
@@ -263,10 +265,15 @@ main button {
     transition: 0.4s;
 }
 
+.syncButton {
+
+    background-color: #617999 !important;
+}
+
 main button:hover {
     background-color: transparent;
     border: 2px solid #516585;
-    color: black;
+    color: rgb(209, 198, 198);
 }
 
 main button img {
@@ -274,7 +281,6 @@ main button img {
     width: 20px;
     height: auto;
 }
-
 
 
 
