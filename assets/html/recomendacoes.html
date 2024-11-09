@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/recomendacoes.css">
+    <script src="../js/recomendacoes.js" defer></script>
 </head>
 <body>
     <aside>
@@ -38,7 +39,7 @@
             </li>
             <li>
               <a href=""></a>
-              <button class="link-recomendacoes">Recomendações </button>
+              <button class="link-recomendacoes">Recomendações</button>
             </li>
           </ul>
         </nav>
@@ -59,57 +60,14 @@
 
               <div class="alert-container">
                 <h2>Umidade do solo abaixo do ideal</h2>
-                <p>Atenção! Umidade do solo abaixo de 30% - aumentar a irrigação imediatamente.</p>
+                <p>Atenção! Umidade do solo abaixo de 70% - aumentar a irrigação imediatamente.</p>
               </div>
-
-              <div class="graph-container">
-                <img src="/assets/imgs/graph-placeholder.png" alt="Gráfico relacionado ao problema">
-              </div>
-
-                <div class="recomendations">
-                    <ul>
-                        <li class="titleTopicRecomendations">1. Irrigação:</li>
-                        <li>Quantidade: Aplicar 20 litros por hectare</li>
-                        <li>Observação: Condições de seca detectadas</li>
-                    </ul>
-
-                    <ul>
-                        <li class="titleTopicRecomendations">2. Fertilizantes</li>
-                        <li>Tipo: Fertilizante NPK 10-10-10</li>
-                        <li>Quantidade: 50kg por hectare</li>
-                    </ul>
-
-                    <ul>
-                        <li class="titleTopicRecomendations">3. Colheita</li>
-                        <li>Momento Ideal: Colher em 7 dias</li>
-                        <li>Observação: Clima favorável e maturidade adequada</li>
-                    </ul>
-                </div>
-
-            </section>
-
-
-            <section class="card-container">
-            
-              <div class="icon-container">
-                <img src="/assets/imgs/recomendationIcon.png" alt="Ícone de Alerta">
-              </div>
-
-              <div class="alert-container">
-                <h2>Umidade do solo abaixo do ideal</h2>
-                <p>Atenção! Umidade do solo abaixo de 30% - aumentar a irrigação imediatamente.</p>
-              </div>
-
-              <div class="graph-container">
-                <img src="/assets/imgs/graph-placeholder.png" alt="Gráfico relacionado ao problema">
-              </div>
-
 
               <div class="recomendations">
                   <ul>
                       <li class="titleTopicRecomendations">1. Irrigação:</li>
                       <li>Quantidade: Aplicar 20 litros por hectare</li>
-                      <li>Observação: Condições de seca detectadas</li>
+                      <li>Observação: Condições de chuva forte detectadas</li>
                   </ul>
 
                   <ul>
@@ -123,6 +81,34 @@
                       <li>Momento Ideal: Colher em 7 dias</li>
                       <li>Observação: Clima favorável e maturidade adequada</li>
                   </ul>
+               </div>
+
+            </section>
+
+
+            <section class="card-container">
+
+              <div class="icon-container">
+                <img src="/assets/imgs/recomendationIcon.png" alt="Ícone de Alerta">
+              </div>
+            
+              <div class="alert-container">
+                <h2>Reservatório de água abaixo do ideal</h2>
+                <p>Atenção! Reservatório de água abaixo de 60%  - abastecer o reservatório imediatamente.</p>
+              </div>
+
+             
+              <div class="recomendations">
+                  <ul>
+                      <li class="titleTopicRecomendations">1. Abastecimento:</li>
+                      <li>Abastecer o reservatório até 70% da sua capacidade</li>
+                      <li>Observação: Risco de alagamento por chuva</li>
+                  </ul>
+
+                  <ul>
+                      <li class="titleTopicRecomendations">2. Investimento:</li>
+                      <li>Melhorar a qualidade do reservatório</li>
+                  </ul>
               </div>
 
           </section>
@@ -134,79 +120,6 @@
       </div>
         </div>
       </main>
-
-<script>
-  const carousel = document.querySelector('.carousel');
-  const cards = document.querySelectorAll('.card-container');
-  const nextBtn = document.getElementById('nextBtn');
-  const prevBtn = document.getElementById('prevBtn');
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    carousel.style.transform = `translateY(-${currentIndex * 100}%)`; 
-    updateButtons();
-  }
-
-  function updateButtons() {
-    if (currentIndex === 0) {
-      prevBtn.style.display = 'none';
-    } 
-
-    else {
-      prevBtn.style.display = 'block';
-    }
-
-
-    if (currentIndex === cards.length - 1) {
-      nextBtn.style.display = 'none';
-    }
-
-    else {
-      nextBtn.style.display = 'block'
-    }
-  }
-
-  nextBtn.addEventListener('click', () => {
-
-    if (currentIndex < cards.length - 1) {
-      currentIndex++;
-      updateCarousel();
-    }
-  });
-
-  prevBtn.addEventListener('click', () => {
-
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
-    }
-  });
-
-  carousel.addEventListener('wheel', (event) => {
-
-    event.preventDefault();
-
-    if (event.deltaY > 0) {
-
-      if (currentIndex < cards.length - 1) {
-        
-        currentIndex++;
-        updateCarousel();
-      }
-    }
-
-    else {
-      if (currentIndex > 0) {
-        
-        currentIndex--;
-        updateCarousel();
-      }
-    }
-  });
-
-  updateButtons();
-</script>
 </body>
 
 

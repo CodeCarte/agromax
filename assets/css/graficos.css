@@ -168,13 +168,19 @@ main svg circle {
     display: flex;
     fill: none;
     stroke: #124975;
-    stroke-width: 14;
+    stroke-width: 9;
     stroke-linecap: round;
 }
 
 main svg #circle1 {
-    stroke-dasharray: 130;
-    stroke-dashoffset: 70;
+    fill: none;
+  stroke: #124975;
+  stroke-width: 9;
+  stroke-dasharray: 282.74;         /* Comprimento total da circunferência */
+  stroke-dashoffset: 282.74;        /* Começa escondido (0%) */
+  transform: rotate(-90deg);        /* Rota o círculo para começar no topo */
+  transform-origin: 50% 50%;        /* Garante que o ponto de rotação é o centro */
+  animation: loadProgress 2s cubic-bezier(0.5, 0, 0.2, 1) forwards;
 }
 
 main svg #circle2 {
@@ -227,10 +233,7 @@ main .general-info ul li img {
 
 
 
-main .general-info ul li .rainyPng {
-    position: relative;   
-    top: -6px;
-}
+
 
 
 
@@ -275,5 +278,35 @@ main button img {
 
 
 
+@keyframes loadProgress {
+    0% {
+      stroke-dashoffset: 282.74;      /* Começa sem preencher */
+    }
+    100% {
+      stroke-dashoffset: 141.37;      /* Vai até 50% */
+    }
+  }
 
 
+  @media (max-width:1456px) {
+    main .graphsContainer{
+        width: 80%;
+    }
+  }
+
+
+  @media (max-width: 1308px) {
+
+    main .graphsCard {
+        gap: 20px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    main .graphsContainer{
+        width: 90%;
+    }
+    main .graphsCard {
+        gap: 0px;
+    }
+  }

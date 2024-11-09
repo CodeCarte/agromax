@@ -6,6 +6,7 @@
     <title>Página de Login</title>
     <link rel="stylesheet" href="../css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <script src="../js/login.js" defer></script>
 </head>
 <body>
 
@@ -41,20 +42,5 @@
             </form>
         </div>
     </div>
-
-    <script>
-        const senha = document.getElementById("senha");
-        const icon = document.getElementById("icon");
-
-        function showHide(){
-            if(senha.type === "password"){
-            senha.setAttribute('type','text');
-            icon.classList.add('hide')
-        }else{
-            senha.setAttribute('type','password');
-            icon.classList.remove('hide') 
-            }
-        }
-    </script>
 </body>
 </html>

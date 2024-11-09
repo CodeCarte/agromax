@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/cadastro.css" />
+    <script src="../js/cadastro.js" defer></script>
     <title>Cadastro</title>
   </head>
   <body>
@@ -53,22 +54,5 @@
       <video autoplay muted loop id="background-video">
           <source src="../videos/backgroundvideo.mp4" type="video/mp4">
     </div> 
-
-  <script>
-      const senha = document.getElementById("senha");
-      const icon = document.getElementById("icon");
-  
-      function showHide(){
-        if(senha.type === "password"){
-          senha.setAttribute('type','text');
-          icon.classList.add('hide')
-        }else{
-          senha.setAttribute('type','password');
-          icon.classList.remove('hide') 
-        }
-      }
-
-  </script>
-
   </body>
 </html>

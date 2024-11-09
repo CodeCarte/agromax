@@ -122,6 +122,15 @@ input::placeholder {
     color: red;      
 }
 
+input[type="password"]::-ms-reveal, 
+input[type="password"]::-webkit-outer-spin-button, 
+input[type="password"]::-webkit-input-placeholder {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+
 #checkbox-input {
     display: flex;
     position: relative;
