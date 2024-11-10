@@ -166,12 +166,12 @@ input[type="password"]::-webkit-input-placeholder {
 }
 
 button {
-    background-color: #D8ECFE;
+    background-color: #617999;
     border: none;
     border-radius: 8px;
     padding: 25px;
     width: 100%;
-    color: black;
+    color: white;
     font-size: 23px;
     font-weight: 550;
     cursor: pointer;
@@ -180,10 +180,12 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.4s;
 }
 
 button:hover {
-    background-color: #C0E1FA;
+    background-color: #D8ECFE;
+    color: #124975;
 }
 
 

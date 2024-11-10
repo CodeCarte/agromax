@@ -266,14 +266,17 @@ main button {
 }
 
 .syncButton {
-
-    background-color: #617999 !important;
+    background-color: #617999;
 }
 
-main button:hover {
+.syncButton:hover {
+    background-color: #124975;
+    color: white;
+}
+
+main .arrowButton:hover {
     background-color: transparent;
-    border: 2px solid #516585;
-    color: rgb(209, 198, 198);
+    border: 2px solid #617999;
 }
 
 main button img {

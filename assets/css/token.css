@@ -131,7 +131,7 @@ main{
     width: 120px;
     height: 40px;
     border-radius: 10px;
-    border: none;
+    border: 2px solid transparent;
     margin-top: 16px;
     cursor: pointer;
     text-align: center;
@@ -144,7 +144,7 @@ main{
 
 .token-button:hover {
     background-color: transparent;
-    border: 2px solid #516585;
+    border: 2px solid #DBF2FF;
     color: white;
 }
 

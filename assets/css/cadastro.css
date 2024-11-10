@@ -151,13 +151,13 @@ input[type="password"]::-webkit-input-placeholder {
 }
 
 button {
-    background-color: #D8ECFE;
+    background-color: #617999;
     border: none;
     border-radius: 8px;
     padding: 25px;
     width: 467.5px;
     height: 66px;
-    color: black;
+    color: white;
     font-size: 23px;
     font-family: "Josefin Sans", sans-serif;
     cursor: pointer;
@@ -167,16 +167,12 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.4s;
 }
 
 button:hover{
-    background-color: #C0E1FA;
-    border-color: #80d0ff;
-    border-style: solid;
-    border-width: 2.5px;
-    text-shadow: 0 0 10px rgba(128, 208, 255, 0.8), 
-    0 0 20px rgba(128, 208, 255, 0.6), 
-    0 0 30px rgba(128, 208, 255, 0.4);
+    background-color: #D8ECFE;
+    color: #124975;
 }
 
 .img-fechar {
